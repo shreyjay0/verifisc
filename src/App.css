@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.none {
+  height: 40vmin;
+  pointer-events: none;
+}
+.submit-username {
+  background-color: rgba(135, 147, 201, 0.39) !important;
+  color: #1639a3 !important;
+  box-shadow: none !important;
+  font-weight: bolder !important;
+}
+
+.submit-username:hover {
+  background: #675ea2e6 !important;
+  color: white !important;
+}
+@media only screen and (max-width: 500px) {
+  .mui-card-outer {
+    flex-direction: column-reverse !important;
+  }
+  .mui-img-show {
+    max-height: 45vh;
+    width: 100% !important;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .none {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(to left, #3e2ac6, #ae1717);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
