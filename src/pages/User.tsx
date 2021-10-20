@@ -158,8 +158,8 @@ function User(props: setUserType) {
         username: username,
         sign: signature,
       });
+      setaddressSigned(true);
       if (signature != "") {
-        setaddressSigned(true);
       }
     } else {
       setchainError(true);
