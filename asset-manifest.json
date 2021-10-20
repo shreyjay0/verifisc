@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/verifisc%20%20%20/static/css/main.d3289b49.chunk.css",
+    "main.js": "/verifisc%20%20%20/static/js/main.01df47e1.chunk.js",
+    "main.js.map": "/verifisc%20%20%20/static/js/main.01df47e1.chunk.js.map",
+    "runtime-main.js": "/verifisc%20%20%20/static/js/runtime-main.2d3b536e.js",
+    "runtime-main.js.map": "/verifisc%20%20%20/static/js/runtime-main.2d3b536e.js.map",
+    "static/js/2.f133ce25.chunk.js": "/verifisc%20%20%20/static/js/2.f133ce25.chunk.js",
+    "static/js/2.f133ce25.chunk.js.map": "/verifisc%20%20%20/static/js/2.f133ce25.chunk.js.map",
+    "static/js/3.d012e57b.chunk.js": "/verifisc%20%20%20/static/js/3.d012e57b.chunk.js",
+    "static/js/3.d012e57b.chunk.js.map": "/verifisc%20%20%20/static/js/3.d012e57b.chunk.js.map",
+    "index.html": "/verifisc%20%20%20/index.html",
+    "static/css/main.d3289b49.chunk.css.map": "/verifisc%20%20%20/static/css/main.d3289b49.chunk.css.map",
+    "static/js/2.f133ce25.chunk.js.LICENSE.txt": "/verifisc%20%20%20/static/js/2.f133ce25.chunk.js.LICENSE.txt",
+    "static/media/back1.fe0ec5d4.webp": "/verifisc%20%20%20/static/media/back1.fe0ec5d4.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d3b536e.js",
+    "static/js/2.f133ce25.chunk.js",
+    "static/css/main.d3289b49.chunk.css",
+    "static/js/main.01df47e1.chunk.js"
+  ]
+}
