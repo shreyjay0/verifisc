@@ -143,16 +143,14 @@ function User(props: setUserType) {
       const address = await web3.eth.getAccounts();
       const e18convert = Math.pow(10, 18);
       const signed = await web3.eth.personal.sign(username, address[0], PASS);
-      const b = await web3.eth.getBalance(address[0]);
 
-      const vall = await Promise.all([address, signed, b, account]).then(
-        (val) => {
-          return val;
-        }
-      );
+      const vall = await Promise.all([address, signed, account]).then((val) => {
+        return val;
+      });
       // [setuserAddress(address[0]),setsignature(signed), setaccount(await address),setbal(b/e18convert)] = signPromise
-
-      setuserAddress(address);
+      setuserAddress(address[0]);
+      const b = await web3.eth.getBalance(address[0]);
+      setbal(b / e18convert);
       setsignInfo({
         address: userAddress,
         username: username,
@@ -196,7 +194,11 @@ function User(props: setUserType) {
     });
     settimeout(8);
   };
-
+  const onKeyPress = (e: any) => {
+    if (e.key === "Enter") {
+      onSubmitUsername(e);
+    }
+  };
   useEffect(() => {
     setshowMsg(accepted != null);
     const val = connectWallet();
@@ -225,7 +227,7 @@ function User(props: setUserType) {
         }}
       >
         {addressSigned ? (
-          <SuccessAddress address={userAddress} />
+          <SuccessAddress address={userAddress} balance={bal} />
         ) : (
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
@@ -273,6 +275,7 @@ function User(props: setUserType) {
                   onChange={(e) => {
                     setusername(e.target.value);
                   }}
+                  onKeyPress={onKeyPress}
                 />
 
                 {/* <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" /> */}

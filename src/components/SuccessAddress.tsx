@@ -3,6 +3,7 @@ import React from "react";
 
 interface addressType {
   address: string;
+  balance: number;
 }
 
 function SuccessAddress(props: addressType) {
@@ -21,6 +22,9 @@ function SuccessAddress(props: addressType) {
         <Typography>
           You have successfully signed with address:
           {props.address}
+          <br />
+          <br />
+          BNB balance: {props.balance}
         </Typography>
       </Alert>
     </Stack>
