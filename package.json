@@ -2,6 +2,7 @@
   "name": "uadd-bsc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://shreyjay0.github.io/verifisc",
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -23,7 +24,6 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "react-scripts start",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
